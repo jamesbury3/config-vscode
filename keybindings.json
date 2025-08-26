@@ -1,6 +1,14 @@
 [
   // File Explorer
   {
+    "key": "cmd+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "alt+e",
+    "command": "workbench.view.explorer"
+  },
+  {
     "key": "space e",
     "command": "workbench.files.action.focusFilesExplorer",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus) && !filesExplorerFocus"
@@ -81,6 +89,14 @@
   },
 
   // Git Integration
+  {
+    "key": "cmd+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "alt+g",
+    "command": "workbench.view.scm"
+  },
   {
     "key": "space g l p",
     "command": "git.viewChanges",
