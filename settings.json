@@ -1,28 +1,8 @@
 {
-  "vim.leader": "<space>",
+  // "vim.leader": "<space>", // Disabled to prevent conflicts
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.files.action.focusFilesExplorer"]
-    },
-    {
-      "before": ["<leader>", "E"],
-      "commands": ["workbench.files.action.showActiveFileInExplorer"]
-    },
-    {
-      "before": ["<leader>", "<leader>"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
-      "before": ["<leader>", "f", "g"],
-      "commands": ["workbench.action.findInFiles"]
-    },
-    {
-      "before": ["<leader>", "f", "b"],
-      "commands": ["workbench.action.showAllEditors"]
-    },
     {
       "before": ["L"],
       "commands": ["workbench.action.nextEditor"]
@@ -30,53 +10,6 @@
     {
       "before": ["H"],
       "commands": ["workbench.action.previousEditor"]
-    },
-    {
-      "before": ["<leader>", "b", "n"],
-      "commands": ["workbench.action.files.newUntitledFile"]
-    },
-    {
-      "before": ["<leader>", "b", "d"],
-      "commands": ["workbench.action.closeActiveEditor"]
-    },
-    {
-      "before": ["<leader>", "b", "D"],
-      "commands": ["workbench.action.closeAllEditors"]
-    },
-    {
-      "before": ["<leader>", "q", "q"],
-      "commands": ["workbench.action.quit"]
-    },
-    {
-      "before": ["<leader>", "s"],
-      "commands": [
-        "workbench.action.files.save",
-        "editor.action.formatDocument"
-      ]
-    },
-    {
-      "before": ["<leader>", "W"],
-      "commands": ["editor.action.toggleWordWrap"]
-    },
-    {
-      "before": ["<leader>", "c", "f"],
-      "commands": ["editor.action.formatDocument"]
-    },
-    {
-      "before": ["<leader>", "l", "o"],
-      "commands": ["editor.action.organizeImports"]
-    },
-    {
-      "before": ["<leader>", "l", "n"],
-      "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["<leader>", "l", "i"],
-      "commands": ["editor.action.goToImplementation"]
-    },
-    {
-      "before": ["<leader>", "l", "r"],
-      "commands": ["editor.action.goToReferences"]
     },
     {
       "before": ["<C-h>"],
