@@ -28,6 +28,26 @@
     "command": "workbench.files.action.showActiveFileInExplorer",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
   // Quick Open / Telescope equivalents
   {
     "key": "space space",
