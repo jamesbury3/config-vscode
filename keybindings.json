@@ -28,7 +28,6 @@
     "command": "workbench.files.action.showActiveFileInExplorer",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
-
   // Quick Open / Telescope equivalents
   {
     "key": "space space",
@@ -60,7 +59,6 @@
     "command": "workbench.action.openGlobalKeybindings",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
-
   // Buffer/Tab Management
   {
     "key": "shift+l",
@@ -87,7 +85,6 @@
     "command": "workbench.action.closeAllEditors",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
-
   // Git Integration
   {
     "key": "cmd+g",
@@ -122,7 +119,6 @@
     "command": "git.openChange",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
-
   // General
   {
     "key": "space q q",
@@ -138,6 +134,18 @@
     "key": "space shift+w",
     "command": "editor.action.toggleWordWrap",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
+  },
+
+  // Terminal
+  {
+    "key": "cmd+/",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "vim.mode == 'Normal' || terminal.active"
+  },
+  {
+    "key": "alt+/",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "vim.mode == 'Normal' || terminal.active"
   },
 
   // Window Navigation
@@ -161,7 +169,6 @@
     "command": "workbench.action.navigateRight",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
-
   // Window Resizing (approximate equivalents)
   {
     "key": "space w w",
@@ -183,14 +190,12 @@
     "command": "workbench.action.decreaseViewHeight",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
-
   // Format
   {
     "key": "space c f",
     "command": "editor.action.formatDocument",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
-
   // Debugging
   {
     "key": "space shift+d b",
@@ -227,7 +232,6 @@
     "command": "workbench.action.debug.continue",
     "when": "inDebugMode"
   },
-
   // LSP
   {
     "key": "space l o",
@@ -254,5 +258,4 @@
     "command": "editor.action.formatDocument",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
-
 ]
