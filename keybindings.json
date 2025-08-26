@@ -1,0 +1,241 @@
+[
+  // File Explorer
+  {
+    "key": "space e",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "vim.mode == 'Normal' && !filesExplorerFocus"
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "vim.mode == 'Normal' && filesExplorerFocus"
+  },
+  {
+    "key": "o",
+    "command": "list.select",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "space shift+e",
+    "command": "workbench.files.action.showActiveFileInExplorer",
+    "when": "vim.mode == 'Normal'"
+  },
+
+  // Quick Open / Telescope equivalents
+  {
+    "key": "space space",
+    "command": "workbench.action.quickOpen",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f i",
+    "command": "workbench.action.quickOpen",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f g",
+    "command": "workbench.action.findInFiles",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f b",
+    "command": "workbench.action.showAllEditors",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f h",
+    "command": "workbench.action.openGlobalKeybindings",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f k",
+    "command": "workbench.action.openGlobalKeybindings",
+    "when": "vim.mode == 'Normal'"
+  },
+
+  // Buffer/Tab Management
+  {
+    "key": "shift+l",
+    "command": "workbench.action.nextEditor",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+h",
+    "command": "workbench.action.previousEditor",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space b n",
+    "command": "workbench.action.files.newUntitledFile",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space b d",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space b shift+d",
+    "command": "workbench.action.closeAllEditors",
+    "when": "vim.mode == 'Normal'"
+  },
+
+  // Git Integration
+  {
+    "key": "space g l p",
+    "command": "git.viewChanges",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space g l b",
+    "command": "gitlens.toggleFileBlame",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space g f r",
+    "command": "git.revertSelectedRanges",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space g f d",
+    "command": "git.openChange",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space g d",
+    "command": "git.openChange",
+    "when": "vim.mode == 'Normal'"
+  },
+
+  // General
+  {
+    "key": "space q q",
+    "command": "workbench.action.quit",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space s",
+    "command": "workbench.action.files.save",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space shift+w",
+    "command": "editor.action.toggleWordWrap",
+    "when": "vim.mode == 'Normal'"
+  },
+
+  // Window Navigation
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight",
+    "when": "vim.mode == 'Normal'"
+  },
+
+  // Window Resizing (approximate equivalents)
+  {
+    "key": "space w w",
+    "command": "workbench.action.increaseViewWidth",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space w n",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space w t",
+    "command": "workbench.action.increaseViewHeight",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space w s",
+    "command": "workbench.action.decreaseViewHeight",
+    "when": "vim.mode == 'Normal'"
+  },
+
+  // Format
+  {
+    "key": "space c f",
+    "command": "editor.action.formatDocument",
+    "when": "vim.mode == 'Normal'"
+  },
+
+  // Debugging
+  {
+    "key": "space shift+d b",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space shift+d c",
+    "command": "workbench.debug.viewlet.action.removeAllBreakpoints",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space shift+d d",
+    "command": "workbench.action.debug.disconnect",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space shift+d s",
+    "command": "workbench.action.debug.start",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "f1",
+    "command": "workbench.action.debug.stepOver",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f2",
+    "command": "workbench.action.debug.stepInto",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f3",
+    "command": "workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+
+  // LSP
+  {
+    "key": "space l o",
+    "command": "editor.action.organizeImports",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l n",
+    "command": "editor.action.rename",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l i",
+    "command": "editor.action.goToImplementation",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l r",
+    "command": "editor.action.goToReferences",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space l f",
+    "command": "editor.action.formatDocument",
+    "when": "vim.mode == 'Normal'"
+  }
+]
