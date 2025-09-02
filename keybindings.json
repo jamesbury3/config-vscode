@@ -155,6 +155,22 @@
     "command": "editor.action.toggleWordWrap",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+r",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
 
   // Terminal
   {
