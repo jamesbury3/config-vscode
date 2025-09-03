@@ -156,6 +156,14 @@
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
   {
+    "key": "cmd+shift+w",
+    "command": "editor.action.toggleWordWrap"
+  },
+  {
+    "key": "alt+shift+w",
+    "command": "editor.action.toggleWordWrap"
+  },
+  {
     "key": "cmd+l",
     "command": "workbench.action.toggleSidebarVisibility"
   },
