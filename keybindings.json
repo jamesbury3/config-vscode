@@ -105,6 +105,14 @@
     "command": "workbench.action.closeAllEditors",
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
+  {
+    "key": "cmd+b",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "alt+b",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
   // Git Integration
   {
     "key": "cmd+g",
