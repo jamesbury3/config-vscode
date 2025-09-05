@@ -48,6 +48,11 @@
     "command": "list.select",
     "when": "filesExplorerFocus && !inputFocus"
   },
+  {
+    "key": "/",
+    "command": "list.find",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
   // Quick Open / Telescope equivalents
   {
     "key": "space space",
@@ -155,7 +160,13 @@
   },
   {
     "key": "space s",
-    "command": "workbench.action.files.save",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "editor.action.formatDocument",
+        "workbench.action.files.save"
+      ]
+    },
     "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
   },
   {
@@ -187,7 +198,6 @@
     "key": "alt+r",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
-
   // Terminal
   {
     "key": "cmd+/",
@@ -199,7 +209,6 @@
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "vim.mode == 'Normal' || terminal.active"
   },
-
   // Window Navigation
   {
     "key": "ctrl+h",
