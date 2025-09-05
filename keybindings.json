@@ -315,5 +315,16 @@
     "key": "ctrl+p",
     "command": "workbench.action.quickOpen",
     "when": "isWindows"
+  },
+  // Alt+P shortcuts for Windows
+  {
+    "key": "alt+p",
+    "command": "workbench.action.quickOpen",
+    "when": "isWindows"
+  },
+  {
+    "key": "alt+shift+p",
+    "command": "workbench.action.showCommands",
+    "when": "isWindows"
   }
 ]
