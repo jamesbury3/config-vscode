@@ -4,48 +4,94 @@
   "vim.highlightedyank.enable": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["L"],
-      "commands": ["workbench.action.nextEditor"]
+      "before": [
+        "L"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
     },
     {
-      "before": ["H"],
-      "commands": ["workbench.action.previousEditor"]
+      "before": [
+        "H"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
     },
     {
-      "before": ["<C-h>"],
-      "commands": ["workbench.action.navigateLeft"]
+      "before": [
+        "<C-h>"
+      ],
+      "commands": [
+        "workbench.action.navigateLeft"
+      ]
     },
     {
-      "before": ["<C-j>"],
-      "commands": ["workbench.action.navigateDown"]
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "workbench.action.navigateDown"
+      ]
     },
     {
-      "before": ["<C-k>"],
-      "commands": ["workbench.action.navigateUp"]
+      "before": [
+        "<C-k>"
+      ],
+      "commands": [
+        "workbench.action.navigateUp"
+      ]
     },
     {
-      "before": ["<C-l>"],
-      "commands": ["workbench.action.navigateRight"]
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        "workbench.action.navigateRight"
+      ]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["J"],
-      "commands": ["editor.action.moveLinesDownAction"]
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
     },
     {
-      "before": ["K"],
-      "commands": ["editor.action.moveLinesUpAction"]
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
     },
     {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"],
-      "after": ["g", "v"]
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ],
+      "after": [
+        "g",
+        "v"
+      ]
     },
     {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"],
-      "after": ["g", "v"]
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ],
+      "after": [
+        "g",
+        "v"
+      ]
     }
   ],
   "vim.handleKeys": {
@@ -55,9 +101,23 @@
   },
   "workbench.colorTheme": "Default Dark+",
   "editor.lineNumbers": "on",
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.html\\.erb$",
+        "cmd": "erb-format ${file} --write"
+      }
+    ]
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
