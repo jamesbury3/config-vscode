@@ -109,6 +109,7 @@
   "editor.insertSpaces": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
+  // Add format-on-save for files where there isn't an easy vs code way to do it
   "emeraldwalk.runonsave": {
     "commands": [
       {
