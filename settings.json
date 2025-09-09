@@ -100,7 +100,7 @@
     "<C-z>": false
   },
   "workbench.colorTheme": "Default Dark+",
-  "editor.lineNumbers": "on",
+  "editor.lineNumbers": "relative",
   "editor.rulers": [
     80,
     120
