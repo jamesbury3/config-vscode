@@ -97,7 +97,8 @@
   "vim.handleKeys": {
     "<C-d>": false,
     "<C-s>": false,
-    "<C-z>": false
+    "<C-z>": false,
+    "<C-f>": false
   },
   "workbench.colorTheme": "Default Dark+",
   "editor.lineNumbers": "relative",

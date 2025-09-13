@@ -340,5 +340,16 @@
     "key": "alt+shift+p",
     "command": "workbench.action.showCommands",
     "when": "isWindows"
+  },
+  // Windows search shortcuts
+  {
+    "key": "ctrl+f",
+    "command": "actions.find",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "workbench.action.findInFiles",
+    "when": "isWindows"
   }
 ]
