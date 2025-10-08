@@ -1,6 +1,6 @@
 {
   // "vim.leader": "<space>", // Disabled to prevent conflicts
-  "vim.useSystemClipboard": true,
+  "vim.useSystemClipboard": false,
   "vim.highlightedyank.enable": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
