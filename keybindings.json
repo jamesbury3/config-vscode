@@ -28,5 +28,9 @@
     "key": "ctrl+l",
     "command": "workbench.action.focusRightGroup",
     "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+k n",
+    "command": "explorer.newFile"
   }
 ]
