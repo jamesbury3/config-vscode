@@ -12,25 +12,66 @@
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusLeftGroup",
-    "when": "vim.mode == 'Normal'"
+    "when": "vim.mode == 'Normal' && isMac"
   },
   {
     "key": "ctrl+j",
     "command": "workbench.action.focusBelowGroup",
-    "when": "vim.mode == 'Normal'"
+    "when": "vim.mode == 'Normal' && isMac"
   },
   {
     "key": "ctrl+k",
     "command": "workbench.action.focusAboveGroup",
-    "when": "vim.mode == 'Normal'"
+    "when": "vim.mode == 'Normal' && isMac"
   },
   {
     "key": "ctrl+l",
     "command": "workbench.action.focusRightGroup",
-    "when": "vim.mode == 'Normal'"
+    "when": "vim.mode == 'Normal' && isMac"
+  },
+  {
+    "key": "alt+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "vim.mode == 'Normal' && isWindows"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "vim.mode == 'Normal' && isWindows"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "vim.mode == 'Normal' && isWindows"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "vim.mode == 'Normal' && isWindows"
   },
   {
     "key": "cmd+k n",
-    "command": "explorer.newFile"
+    "command": "explorer.newFile",
+    "when": "isMac"
+  },
+  {
+    "key": "ctrl+k n",
+    "command": "explorer.newFile",
+    "when": "isWindows || isLinux"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-extension.vim_ctrl+n",
+    "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-extension.vim_ctrl+f",
+    "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-extension.vim_ctrl+w",
+    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
   }
 ]
