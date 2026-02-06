@@ -83,5 +83,15 @@
     "key": "ctrl+b",
     "command": "-extension.vim_ctrl+b",
     "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "key": "cmd+u",
+    "command": "references-view.showCallHierarchy",
+    "when": "editorHasCallHierarchyProvider"
+  },
+  {
+    "key": "alt+u",
+    "command": "references-view.showCallHierarchy",
+    "when": "editorHasCallHierarchyProvider"
   }
 ]

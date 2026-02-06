@@ -33,6 +33,20 @@ Navigate between editor groups (split windows) using vim-style hjkl keys.
 | `Alt+K` | Focus editor group above | Vim Normal mode |
 | `Alt+L` | Focus right editor group | Vim Normal mode |
 
+## LSP
+
+### macOS
+
+| Shortcut | Action | Context |
+|----------|--------|---------|
+| `Cmd+U` | Go to References | Vim Normal mode |
+
+### Windows/Linux
+
+| Shortcut | Action | Context |
+|----------|--------|---------|
+| `Alt+U` | Go to References | Vim Normal mode |
+
 ## File Operations
 
 ### macOS
